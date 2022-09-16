@@ -5,9 +5,7 @@ package principal.handball;
 import java.util.Date;
 
 public class clubdeportivo {
-/*/*se pueden registrar los Clubes Deportivos, los cuales se identificarán por un rol único
-otorgado por la asociación de Handball, Nombre del Club, nombre del fundador, año de fundación, País de
-origen, Lema, colores y valor de su suscripción.*/
+
 //Clubes deportivos
 
 private int RolUnico; //debe ser int y validar que sea mayor a 1000 y ademas que vaya subiendo de 10 en 10

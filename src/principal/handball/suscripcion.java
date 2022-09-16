@@ -6,9 +6,7 @@ import java.util.Date;
 
 
 public class suscripcion {
-/*cada Usuario puede suscribirse a los clubes de los cuales quiere recibir información y noticias,
-esta relación está marcada por la fecha de inicio de la suscripción, valor de la suscripción, equipos al que se
-está suscrito y abono total por concepto de pagos, además de un correlativo de la venta*/
+
 //Suscripcion
 private Date FechaInicio;
 private int AbonoSuscripcion;

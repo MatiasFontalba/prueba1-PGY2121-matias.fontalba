@@ -7,9 +7,8 @@ import java.util.Date;
 
 
 public class usuario {
-   /* Para los usuarios que se registran en la plataforma, deben estar identificados por su ID, nombre completo,
-    rut, digito verificador, fecha de nacimiento, teléfono, email, nombre de usuario y contraseña.
-    registro de usuario*/
+
+    //registro de usuario
 private String Id;
 private String NombreCompleto;
 private int Rut;
@@ -18,7 +17,7 @@ private Date FechaNacimiento;
 private int Telefono;
 private String Email;
 private String NombreUsuario;
-private String Contraseña;
+private String Contrasenia;
 
 public usuario( ){
     this.Id = "";
@@ -29,7 +28,7 @@ public usuario( ){
     this.Telefono = 0;
     this.Email = "";
     this.NombreUsuario = "";
-    this.Contraseña = "";
+    this.Contrasenia = "";
     
 }
 
@@ -42,7 +41,7 @@ public usuario( ){
         this.Telefono = Telefono;
         this.Email = Email;
         this.NombreUsuario = NombreUsuario;
-        this.Contraseña = Contraseña;
+        this.Contrasenia = Contraseña;
     }
 
     public String getId() {
@@ -117,14 +116,14 @@ public usuario( ){
         
     }
 
-    public String getContraseña() {
-        return Contraseña;
+    public String getContrasenia() {
+        return Contrasenia;
     }
 
-    public void setContraseña(String Contraseña) {
-        if(Contraseña.length() >= 6)//como saber si contiene 1 mayuscula numero
-        //if(Contraseña.matches([]) libreria extensa para aplicarla correctamente(mucho que aprender por el timpo)
-            this.Contraseña = Contraseña;
+    public void setContrasenia(String Contrasenia) {
+        if(Contrasenia.length() >= 6)//como saber si contiene 1 mayuscula numero
+        //if(Contrasenia.matches([]) libreria extensa para aplicarla correctamente(mucho que aprender por el timpo)
+            this.Contrasenia = Contrasenia;
     }
 
     
@@ -144,5 +143,13 @@ public usuario( ){
         }
         return validacion;
         }
-
+        public void CreadorUsuarios(String NombreUsuario, String Contraseña){
+            if(NombreUsuario.length() > 3){
+                if(Contraseña.length() >= 6)    
+                {System.out.println("Usuario creado correctamente :"+getNombreUsuario());}
+                setNombreUsuario(NombreUsuario);
+                setContrasenia (Contraseña);
+            }else {System.out.println("Usuario no creado");}
+       
+        }
 }
